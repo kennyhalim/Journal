@@ -10,6 +10,7 @@ $(document).ready(function() {
     $("#solution").text(newEntry.numWords());
     $("#solution").append("<p>" + newEntry.vowelCount() + "</p>");
     $("#solution").append("<p>" + newEntry.consonantCount() + "</p>");
+    $("#solution").append("<p>" + newEntry.firstSentence() + "</p>");
 
   });
 });

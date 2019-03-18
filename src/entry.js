@@ -35,4 +35,19 @@ export function Entry(title, body) {
     }
     return counter;
   };
+
+  Entry.prototype.firstSentence = function(){
+    var splitBody = this.body.split(" ");
+    var firstSentence = "";
+    for(var i = 0; i < 8 && i < splitBody.length; i++){
+      if(splitBody[i].includes(".")){
+        firstSentence += splitBody[i];
+        break;
+      }
+      else{
+        firstSentence += splitBody[i] + " ";
+      }
+    }
+    return firstSentence;
+  }
 }
