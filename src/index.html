@@ -2,12 +2,14 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>Ping Pong</title>
+    <title>Journal</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
+    <form id="journalForm">
+      <label for="title">Enter a title:</label>
+      <input id="title" type="text" required>
+      <label for="body">Enter a body:</label>
+      <input id="body" type="text" required>
       <button type="submit">Submit</button>
     </form>
     <ul id="solution"></ul>
